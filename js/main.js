@@ -1,3 +1,13 @@
+// blog button anchor---------------------------------------------------------
+document.getElementById('blog-btn').addEventListener('click', function(){
+    window.location.href = './blog.html';
+})
+
+// home button anchor---------------------------------------------------------
+document.getElementById('home-btn').addEventListener('click', function(){
+    window.location.href = './index.html';
+})
+
 // history button click color change------------------------------------------
 document.getElementById('history-btn').addEventListener('click', function () {
     let historyBtn = document.getElementById('history-btn');
@@ -85,5 +95,5 @@ document.getElementById('donate-noakhali-btn').addEventListener('click', functio
 
     my_modal_1.showModal();
 
-    
+
 })
