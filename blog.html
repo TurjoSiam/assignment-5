@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Assignment-5</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .lexend-font {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+    </style>
+</head>
+
+<body class="lexend-font">
+    <header class="sticky top-0 backdrop-blur-3xl pb-1 border">
+        <!-- navbar section starts here -->
+        <nav class="bg-orange-50 container mx-auto px-32 py-4 flex items-center justify-between">
+            <!-- blog button -->
+            <button class="bg-lime-400 rounded-md px-7 py-2 font-semibold border-none">Home</button>
+            <!-- logo -->
+            <div class="flex items-center justify-between gap-3">
+                <img src="./assets/logo.png" alt="logo image">
+                <h4 class="font-bold text-xl">Donate Bangladesh</h4>
+            </div>
+            <!-- balance -->
+            <div class="flex items-center justify-between gap-2">
+                <img src="./assets/coin.png" alt="coin logo">
+                <p>5500</p>
+                <p>BDT</p>
+            </div>
+        </nav>
+        <!-- navbar section ends here -->
+    </header>
+    <main class="container mx-auto px-36">
+        <!-- blog section starts here -->
+        <section class="my-20">
+            <div class="collapse collapse-plus bg-base-200 mb-5">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200 mb-5">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200 mb-5">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+        </section>
+        <!-- blog section ends here -->
+    </main>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
