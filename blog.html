@@ -16,12 +16,14 @@
     }
   </style>
 </head>
+
 <body class="lexend-font">
-  <header class="container mx-auto sticky top-0 border z-10">
+  <header class="container mx-auto sticky top-0 border z-10 backdrop-blur-3xl">
     <!-- navbar section starts here -->
-    <nav class="bg-orange-50 lg:px-32 px-3 py-4 flex items-center justify-between">
+    <nav class="bg-[#f5ba773c] lg:px-32 px-3 py-4 flex items-center justify-between">
       <!-- blog button -->
-      <a href="./index.html"><button class="bg-lime-400 rounded-md px-7 py-2 font-semibold border-none" id="home-btn">Home</button></a>
+      <a href="./index.html"><button class="bg-lime-400 rounded-md px-7 py-2 font-semibold border-none"
+          id="home-btn">Home</button></a>
       <!-- logo -->
       <div class="flex items-center justify-between gap-3">
         <img src="./assets/logo.png" alt="logo image">
@@ -37,34 +39,76 @@
     <!-- navbar section ends here -->
   </header>
   <main class="container mx-auto lg:px-36 px-3">
+    <section class="lg:mt-10 my-3">
+      <h1 class="text-3xl font-extrabold">Important FAQ</h1>
+    </section>
     <!-- blog section starts here -->
     <section class="lg:my-20 my-5">
+      <!-- question 1 -->
       <div class="collapse collapse-plus bg-base-200 mb-5">
         <input type="radio" name="my-accordion-3" checked="checked" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so
+            that programs can change the document structure, style, and content. The DOM represents the document as
+            nodes and objects; that way, programming languages can interact with the page.</p>
         </div>
       </div>
+      <!-- question 2 -->
       <div class="collapse collapse-plus bg-base-200 mb-5">
         <input type="radio" name="my-accordion-3" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>We can select an element from the DOM 5 ways,
+          <ol class="pl-10 list-decimal">
+            <li>getElementByTagName</li>
+            <li>getElementById</li>
+            <li>getElementsByClassName</li>
+            <li>querySelectorAll</li>
+            <li>querySelector</li>
+          </ol>
+          </p>
         </div>
       </div>
+      <!-- question 3 -->
       <div class="collapse collapse-plus bg-base-200 mb-5">
         <input type="radio" name="my-accordion-3" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is
+          it useful?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>Event delegation is a technique that involves attaching a single event listener to a parent element to
+            handle events for all of its descendants.</p><br>
+          <p>Usefulness: Instead of attaching a click handler to each item, event delegation allows to attach a single listener to the parent container. This results in less code and better performance, especially for large sets of elements. It is particularly useful when dealing with dynamic content.</p>
+        </div>
+      </div>
+      <!-- question 4 -->
+      <div class="collapse collapse-plus bg-base-200 mb-5">
+        <input type="radio" name="my-accordion-3"/>
+        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+        <div class="collapse-content">
+          <p>To manipulate an element's attributes and styles at first we have to access the element using methods like getElementById, getElementsByClassName, or querySelector. For manipulating attributes we can use,</p>
+          <ul class="list-disc pl-10">
+            <li>setAttribute()</li>
+            <li>getAttribute()</li>
+            <li>removeAttribute()</li>
+          </ul><br>
+          <p>for manipulating styles, we can use,</p>
+          <ul class="list-disc pl-10">
+            <li>classList.add()</li>
+            <li>classList.remove()</li>
+            <li>classList.replace()</li>
+            <li>classList.toggle()</li>
+            <li>classList.contains()</li>
+          </ul>
         </div>
       </div>
     </section>
     <!-- blog section ends here -->
   </main>
+  <!-- footer section starts here -->
   <footer class="bg-orange-50 py-14 container mx-auto">
   </footer>
+  <!-- footer section ends here -->
   <script src="./js/utilities.js"></script>
   <script src="./js/main.js"></script>
 </body>

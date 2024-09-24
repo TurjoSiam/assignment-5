@@ -1,4 +1,3 @@
-
 // history button click color change------------------------------------------
 document.getElementById('history-btn').addEventListener('click', function () {
     let historyBtn = document.getElementById('history-btn');
@@ -95,7 +94,8 @@ document.getElementById('donate-noakhali-btn').addEventListener('click', functio
     `
     let historyContainer = document.getElementById('history-container');
     historyContainer.appendChild(historyItem);
-
+    
+    // modal opening
     my_modal_1.showModal();
 })
 
@@ -132,6 +132,7 @@ document.getElementById('donate-feni-btn').addEventListener('click', function ()
     let historyContainer = document.getElementById('history-container');
     historyContainer.appendChild(historyItem);
 
+    // modal opening
     my_modal_1.showModal();
 })
 
@@ -168,5 +169,6 @@ document.getElementById('donate-quota-btn').addEventListener('click', function (
     let historyContainer = document.getElementById('history-container');
     historyContainer.appendChild(historyItem);
 
+    // modal opening
     my_modal_1.showModal();
 })
