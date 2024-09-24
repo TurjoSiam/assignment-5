@@ -16,17 +16,16 @@
     }
   </style>
 </head>
-
 <body class="lexend-font">
-  <header class="sticky top-0 backdrop-blur-3xl pb-1 border">
+  <header class="container mx-auto sticky top-0 border z-10">
     <!-- navbar section starts here -->
-    <nav class="bg-orange-50 container mx-auto px-32 py-4 flex items-center justify-between">
+    <nav class="bg-orange-50 lg:px-32 px-3 py-4 flex items-center justify-between">
       <!-- blog button -->
-      <button class="bg-lime-400 rounded-md px-7 py-2 font-semibold border-none" id="home-btn">Home</button>
+      <a href="./index.html"><button class="bg-lime-400 rounded-md px-7 py-2 font-semibold border-none" id="home-btn">Home</button></a>
       <!-- logo -->
       <div class="flex items-center justify-between gap-3">
         <img src="./assets/logo.png" alt="logo image">
-        <h4 class="font-bold text-xl">Donate Bangladesh</h4>
+        <h4 class="font-bold text-xl hidden lg:block">Donate Bangladesh</h4>
       </div>
       <!-- balance -->
       <div class="flex items-center justify-between gap-2">
@@ -37,9 +36,9 @@
     </nav>
     <!-- navbar section ends here -->
   </header>
-  <main class="container mx-auto px-36">
+  <main class="container mx-auto lg:px-36 px-3">
     <!-- blog section starts here -->
-    <section class="my-20">
+    <section class="lg:my-20 my-5">
       <div class="collapse collapse-plus bg-base-200 mb-5">
         <input type="radio" name="my-accordion-3" checked="checked" />
         <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
@@ -64,7 +63,7 @@
     </section>
     <!-- blog section ends here -->
   </main>
-  <footer class="bg-orange-50 py-14">
+  <footer class="bg-orange-50 py-14 container mx-auto">
   </footer>
   <script src="./js/utilities.js"></script>
   <script src="./js/main.js"></script>
