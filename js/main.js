@@ -90,8 +90,8 @@ document.getElementById('donate-noakhali-btn').addEventListener('click', functio
         "bg-white",
     )
     historyItem.innerHTML = `
-    <p class="text-black font-bold text-2xl">${inputNoakhali} taka is donated for flood relief in Noakhali, Bangladesh.</p>
-    <p class="text-gray-500">Date: ${new Date}</p>
+    <p class="text-black font-bold lg:text-xl text-lg">${inputNoakhali} taka is donated for flood relief in Noakhali, Bangladesh.</p>
+    <p class="text-gray-500 text-sm">Date: ${new Date}</p>
     `
     let historyContainer = document.getElementById('history-container');
     historyContainer.appendChild(historyItem);
