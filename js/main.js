@@ -77,12 +77,10 @@ document.getElementById('donate-noakhali-btn').addEventListener('click', functio
     }
 
     // donate button calculation
-    let remainingBalance = parseInt(balance) - parseInt(inputNoakhali);
-    document.getElementById('balance').innerText = remainingBalance;
+    document.getElementById('balance').innerText = remainingBalance(balance, inputNoakhali);
 
     let noakhaliBalance = getValueFromText('noakhali-balance');
-    let updatedNoakhaliBalance = parseInt(noakhaliBalance) + parseInt(inputNoakhali);
-    document.getElementById('noakhali-balance').innerText = updatedNoakhaliBalance;
+    document.getElementById('noakhali-balance').innerText = updateFundBalance(noakhaliBalance, inputNoakhali);
 
     // history adding in history page
     let historyItem = document.createElement('historyItem');
@@ -115,12 +113,10 @@ document.getElementById('donate-feni-btn').addEventListener('click', function ()
     }
 
     // donate button calculation
-    let remainingBalance = parseInt(balance) - parseInt(inputFeni);
-    document.getElementById('balance').innerText = remainingBalance;
+    document.getElementById('balance').innerText = remainingBalance(balance, inputFeni);
 
     let feniBalance = getValueFromText('feni-balance');
-    let updatedFeniBalance = parseInt(feniBalance) + parseInt(inputFeni);
-    document.getElementById('feni-balance').innerText = updatedFeniBalance;
+    document.getElementById('feni-balance').innerText = updateFundBalance(feniBalance, inputFeni);
 
     // history adding in history page
     let historyItem = document.createElement('historyItem');
@@ -153,12 +149,10 @@ document.getElementById('donate-quota-btn').addEventListener('click', function (
     }
 
     // donate button calculation
-    let remainingBalance = parseInt(balance) - parseInt(inputQuota);
-    document.getElementById('balance').innerText = remainingBalance;
+    document.getElementById('balance').innerText = remainingBalance(balance, inputQuota);
 
     let quotaBalance = getValueFromText('quota-balance');
-    let updatedQuotaBalance = parseInt(quotaBalance) + parseInt(inputQuota);
-    document.getElementById('quota-balance').innerText = updatedQuotaBalance;
+    document.getElementById('quota-balance').innerText = updateFundBalance(quotaBalance, inputQuota);
 
     // history adding in history page
     let historyItem = document.createElement('historyItem');
