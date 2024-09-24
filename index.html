@@ -20,13 +20,13 @@
 <body class="lexend-font">
     <header class="sticky top-0 backdrop-blur-3xl pb-1 border">
         <!-- navbar section starts here -->
-        <nav class="bg-orange-50 container mx-auto px-32 py-4 flex items-center justify-between">
+        <nav class="bg-orange-50 container mx-auto lg:px-32 px-3 py-4 flex items-center justify-between">
             <!-- blog button -->
             <button class="bg-lime-400 rounded-md px-7 py-2 font-semibold border-none" id="blog-btn">Blog</button>
             <!-- logo -->
             <div class="flex items-center justify-between gap-3">
                 <img src="./assets/logo.png" alt="logo image">
-                <h4 class="font-bold text-xl">Donate Bangladesh</h4>
+                <h4 class="font-bold text-xl hidden lg:block">Donate Bangladesh</h4>
             </div>
             <!-- balance -->
             <div class="flex items-center justify-between gap-2">
@@ -36,15 +36,15 @@
             </div>
         </nav>
         <!-- button section starts here -->
-        <section class="flex items-center gap-5 justify-center my-5">
+        <section class="flex items-center gap-5 justify-center lg:my-5 my-3">
             <button class="bg-lime-400 rounded-md px-7 py-2 font-semibold border-none"
                 id="donation-btn">Donation</button>
-            <button class="border border-gray-300 rounded-md px-7 py-2" id="history-btn">History</button>
+            <button class="border border-gray-300 rounded-md px-9 py-2" id="history-btn">History</button>
         </section>
         <!-- button section ends here -->
         <!-- navbar section ends here -->
     </header>
-    <main class="container mx-auto px-36" id="donation-window">
+    <main class="container mx-auto lg:px-36 px-3" id="donation-window">
         <!-- modal section starts here -->
         <dialog id="my_modal_1" class="modal">
             <div class="modal-box flex flex-col items-center">
@@ -64,13 +64,13 @@
         <!-- donation section starts here -->
         <section class="flex flex-col justify-center gap-7">
             <!-- card 1 -->
-            <div class="flex items-center gap-7 justify-between rounded-xl p-7 border border-gray-200 mt-5">
+            <div class="flex lg:flex-row flex-col lg:items-center items-start lg:gap-7 gap-3 justify-between rounded-xl lg:p-7 p-5 border border-gray-200 mt-5">
                 <!-- image -->
                 <div>
                     <img src="./assets/noakhali.png" alt="noakhali image">
                 </div>
                 <!-- balance -->
-                <div class="flex flex-col gap-3 w-4/6">
+                <div class="flex flex-col gap-3 lg:w-4/6">
                     <div class="flex items-center gap-2 border-none bg-gray-200 p-2 rounded-md w-fit">
                         <img src="./assets/coin.png" alt="coin logo">
                         <p id="noakhali-balance">2000</p>
@@ -92,13 +92,13 @@
                 </div>
             </div>
             <!-- card 2 -->
-            <div class="flex items-center gap-7 justify-between rounded-xl p-7 border border-gray-200">
+            <div class="flex lg:flex-row flex-col lg:items-center items-start lg:gap-7 gap-3 justify-between rounded-xl lg:p-7 p-5 border border-gray-200">
                 <!-- image -->
                 <div>
                     <img src="./assets/feni.png" alt="noakhali image">
                 </div>
                 <!-- balance -->
-                <div class="flex flex-col gap-3 w-4/6">
+                <div class="flex flex-col gap-3 lg:w-4/6">
                     <div class="flex items-center gap-2 border-none bg-gray-200 p-2 rounded-md w-fit">
                         <img src="./assets/coin.png" alt="coin logo">
                         <p id="feni-balance">600</p>
@@ -121,13 +121,13 @@
                 </div>
             </div>
             <!-- card 3 -->
-            <div class="flex items-center gap-7 justify-between rounded-xl p-7 border border-gray-200 mb-5">
+            <div class="flex lg:flex-row flex-col lg:items-center items-start lg:gap-7 gap-3 justify-between rounded-xl lg:p-7 p-5 border border-gray-200 mb-5">
                 <!-- image -->
                 <div>
                     <img src="./assets/quota-protest.png" alt="noakhali image">
                 </div>
                 <!-- balance -->
-                <div class="flex flex-col gap-3 w-4/6">
+                <div class="flex flex-col gap-3 lg:w-4/6">
                     <div class="flex items-center gap-2 border-none bg-gray-200 p-2 rounded-md w-fit">
                         <img src="./assets/coin.png" alt="coin logo">
                         <p id="quota-balance">2400</p>
