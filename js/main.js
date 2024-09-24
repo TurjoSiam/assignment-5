@@ -126,8 +126,8 @@ document.getElementById('donate-feni-btn').addEventListener('click', function ()
         "bg-white",
     )
     historyItem.innerHTML = `
-    <p class="text-black font-bold text-2xl">${inputFeni} taka is donated for flood relief in Feni, Bangladesh.</p>
-    <p class="text-gray-500">Date: ${new Date}</p>
+    <p class="text-black font-bold lg:text-xl text-lg">${inputFeni} taka is donated for flood relief in Feni, Bangladesh.</p>
+    <p class="text-gray-500 text-sm">Date: ${new Date}</p>
     `
     let historyContainer = document.getElementById('history-container');
     historyContainer.appendChild(historyItem);
@@ -163,8 +163,8 @@ document.getElementById('donate-quota-btn').addEventListener('click', function (
         "bg-white",
     )
     historyItem.innerHTML = `
-    <p class="text-black font-bold text-2xl">${inputQuota} taka is donated for aiding injured in quota movement, Bangladesh.</p>
-    <p class="text-gray-500">Date: ${new Date}</p>
+    <p class="text-black font-bold lg:text-xl text-lg">${inputQuota} taka is donated for aiding injured in quota movement, Bangladesh.</p>
+    <p class="text-gray-500 text-sm">Date: ${new Date}</p>
     `
     let historyContainer = document.getElementById('history-container');
     historyContainer.appendChild(historyItem);
